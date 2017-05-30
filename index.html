@@ -5,19 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Quote Book</title>
+  <link rel="stylesheet" href="main.css">
 </head>
 <body ng-controller='mainCtrl'>
-  <ul>
-    <li ng-repeat='quote in quotes | filter : filterText'>
-      {{quote.author}} - {{quote.text}}
-      <button ng-click="deleteQuote(quote.text)">Delete Quote</button>
-    </li>
-  </ul>
-  <input type="text" placeholder="Add new quote!" ng-model='newQuoteText'>
-  <input type="text" placeholder="Quotes Author" ng-model='newQuoteAuthor'/>
-  <button ng-click="addQuote()">Add Quote</button>
-  <div>
-    Filter : <input type="text" ng-model="filterText"/>
+  <div class="content">
+    <ul>
+      <li ng-repeat='quote in quotes | filter : filterText'>
+        <span class="quotes">"</span>{{quote.text}}<span>"</span> <span class="author">{{quote.author}}</span>
+        <button ng-click="deleteQuote(quote.text)">Delete</button>
+      </li>
+    </ul>
+    <input type="text" placeholder="Add new quote!" ng-model='newQuoteText'>
+    <input type="text" placeholder="Quotes Author" ng-model='newQuoteAuthor'/>
+    <button ng-click="addQuote()">Add Quote</button>
+    <div>
+      Filter : <input type="text" ng-model="filterText"/>
+    </div>
+
   </div>
 
 

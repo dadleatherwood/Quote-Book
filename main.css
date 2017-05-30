@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 2em;
+  border: 1px solid #222;
+  list-style-type: none;
+  background-color: #F4FFFB;
+
+}
+li {
+  height: 100%;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+  border-radius: 1.25em;
+  font-size: 40px;
+  box-shadow: 0px 5px 5px #ccc;
+}
+
+li button {
+  float: right;
+}
+
+span {
+  font-size: 45px;
+}
+
+.author {
+  color: #8F9291;
+}
