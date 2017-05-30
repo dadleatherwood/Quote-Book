@@ -7,7 +7,6 @@
   <title>Quote Book</title>
 </head>
 <body ng-controller='mainCtrl'>
-  {{test}}
   <ul>
     <li ng-repeat='quote in quotes | filter : filterText'>
       {{quote.author}} - {{quote.text}}
