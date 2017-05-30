@@ -1,4 +1,4 @@
-angular.module('quoteBook').service('dataService', function($scope){
+angular.module('quoteBook').service('dataService', function(){
 
   this.getQuotes = function () {
     return quotes
